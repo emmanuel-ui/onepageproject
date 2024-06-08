@@ -65,103 +65,7 @@ function showSlides(slideshowId) {
     document.querySelector(`#${slideshowId} .prev`).addEventListener('click', () => plusSlides(-1));
     document.querySelector(`#${slideshowId} .next`).addEventListener('click', () => plusSlides(1));
 
-// // Modal functionality
-// document.querySelectorAll(`#${slideshowId} img`).forEach(img => {
-//     img.onclick = function() {
-//         let modalId = img.getAttribute('data-modal');
-//         let modal = document.getElementById(modalId);
-//         let rect = img.getBoundingClientRect();
-//         modal.style.display = "flex";
-//         let modalContent = modal.querySelector('.modal-content');
-//         modalContent.style.top = `${rect.top}px`;
-//         modalContent.style.left = `${rect.left}px`;
-//         modalContent.style.width = `${rect.width}px`;
-//         modalContent.style.height = `${rect.height}px`;
 
-//         setTimeout(() => {
-//             modalContent.style.width = "50%";
-//             modalContent.style.height = "auto";
-//             modalContent.style.top = "50%";
-//             modalContent.style.left = "50%";
-//             modalContent.style.transform = "translate(-50%, -50%)";
-//         }, 10);
-
-//         // Hide navigation arrows when modal is shown
-//         document.querySelector(`#${slideshowId} .prev`).style.display = "none";
-//         document.querySelector(`#${slideshowId} .next`).style.display = "none";
-
-//         // Close modal when clicking on the close button
-//         modal.querySelector('.close').onclick = function() {
-//             modal.style.display = "none";
-//             // Show navigation arrows when modal is closed
-//             document.querySelector(`#${slideshowId} .prev`).style.display = "block";
-//             document.querySelector(`#${slideshowId} .next`).style.display = "block";
-//         };
-
-//         // Close modal when clicking outside of it
-//         modal.onclick = function(event) {
-//             if (event.target === modal) {
-//                 modal.style.display = "none";
-//                 // Show navigation arrows when modal is closed
-//                 document.querySelector(`#${slideshowId} .prev`).style.display = "block";
-//                 document.querySelector(`#${slideshowId} .next`).style.display = "block";
-//             }
-//         };
-//     }
-// });
-
-
-
-// // Modal functionality
-// document.querySelectorAll(`#${slideshowId} img`).forEach(img => {
-//     img.onclick = function() {
-//         let modalId = img.getAttribute('data-modal');
-//         let modal = document.getElementById(modalId);
-//         modal.style.display = "flex";
-//         let modalContent = modal.querySelector('.modal-content');
-
-//         // Set top and bottom margin
-//         let modalTopMargin = 20;
-//         let modalBottomMargin = 20;
-
-//         // Calculate available height for content
-//         let availableHeight = modal.clientHeight - (modalTopMargin + modalBottomMargin);
-
-//         // Set maximum height for content
-//         modalContent.style.maxHeight = `${availableHeight}px`;
-
-//         // Center modal content horizontally
-//         modalContent.style.left = "50%";
-//         modalContent.style.transform = "translateX(-50%)";
-
-//         // Hide navigation arrows when modal is shown
-//         document.querySelector(`#${slideshowId} .prev`).style.display = "none";
-//         document.querySelector(`#${slideshowId} .next`).style.display = "none";
-
-//         // Close modal when clicking on the close button
-//         modal.querySelector('.close').onclick = function() {
-//             modal.style.display = "none";
-//             // Show navigation arrows when modal is closed
-//             document.querySelector(`#${slideshowId} .prev`).style.display = "block";
-//             document.querySelector(`#${slideshowId} .next`).style.display = "block";
-//         };
-
-//         // Close modal when clicking outside of it
-//         modal.onclick = function(event) {
-//             if (event.target === modal) {
-//                 modal.style.display = "none";
-//                 // Show navigation arrows when modal is closed
-//                 document.querySelector(`#${slideshowId} .prev`).style.display = "block";
-//                 document.querySelector(`#${slideshowId} .next`).style.display = "block";
-//             }
-//         };
-
-//         // Ensure modal content is contained within its container
-//         modalContent.style.overflowY = "auto";
-//     }
-// });
-
-// Modal functionality
 document.querySelectorAll(`#${slideshowId} img`).forEach(img => {
     img.onclick = function() {
         let modalId = img.getAttribute('data-modal');
@@ -211,10 +115,6 @@ document.querySelectorAll(`#${slideshowId} img`).forEach(img => {
         modalContent.style.overflowY = "auto";
     }
 });
-
-
-
-
 
 }
 
