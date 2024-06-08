@@ -312,7 +312,7 @@ img {
     justify-content: center;
     padding: 30px;
     border-radius: 10px;
-    background-image: url(./img/window.jpg);
+    background-color: black;
     background-size: cover;
     margin: 10px 5%;
     position: relative;
