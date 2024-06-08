@@ -313,8 +313,8 @@ img {
     padding: 30px;
     border-radius: 10px;
     background-color: black;
-    background-size: cover;
-    margin: 10px 5%;
+   /* background-size: cover;*/
+    /*margin: 10px 5%;*/
     position: relative;
     z-index: 1;
     overflow: hidden;
